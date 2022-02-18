@@ -1,13 +1,15 @@
 import mealsImage from "../../assets/meals.jpg";
+import classes from "./Header.module.css";
+import HeaderCartButton from "./HeaderCartButton";
 
 export const Header = (props) => {
   return (
     <>
-      <header>
+      <header className={classes.header}>
         <h1>My meals</h1>
-        <button>Cart</button>
+        <HeaderCartButton />
       </header>
-      <div>
+      <div className={classes["main-image"]}>
         <img src={mealsImage} alt="meals" />
       </div>
     </>
