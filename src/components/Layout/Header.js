@@ -1,3 +1,5 @@
+import mealsImage from "../../assets/meals.jpg";
+
 export const Header = (props) => {
   return (
     <>
@@ -5,7 +7,9 @@ export const Header = (props) => {
         <h1>My meals</h1>
         <button>Cart</button>
       </header>
-      <div></div>
+      <div>
+        <img src={mealsImage} alt="meals" />
+      </div>
     </>
   );
 };
